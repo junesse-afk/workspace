@@ -2,9 +2,44 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>TABLEORDER</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>테스트</h1>
+	<a href="#"><img src="#" alt="TABLEORDER"></a>
+	<main>
+		<form action="#" id="loginFrm" method="post">
+			<fieldset>
+			<legend class="skip">로그인 양식</legend>
+			<ul>
+				<li>
+					<span class="id_bg"><!-- 배경이미지 --></span>
+					<span><input type="text" name="user_id" placeholder="아이디"></span>
+				</li>
+				<li class="error id_error">아이디를 입력해주세요</li>
+				<li>
+					<span class="pw_bg"><!-- 배경이미지 --></span>
+					<span><input type="password" name="user_pw" placeholder="비밀번호"></span>
+					<span class="pw_show_hide"></span>
+				</li>
+				<li class="error pw_error">비밀번호를 입력해주세요</li>
+			</ul>
+			<div class="btm">
+				<p>
+					<label>
+						<input type="checkbox" name="login_y" id="login_y">
+						<span>자동 로그인</span>
+					</label>
+				</p>
+				<a href="#" class="idpw_search">아이디/비밀번호 찾기</a>
+			</div>
+			<button type="submit" id="login_btn">로그인</button>
+			</fieldset>
+		</form>
+		<a href="#" class="join_link">회원가입</a>
+	</main>
+	<footer>
+	 &copy; TABLEORDER Corp. All rights reserved.
+	</footer>
 </body>
 </html>
