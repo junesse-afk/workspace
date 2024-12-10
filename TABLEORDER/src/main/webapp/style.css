@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+h1 {}
+.body{
+	text-align: center;	
+}
+
+ul {
+	list-style-type: none;
+}
+
+fieldset {
+	list-style-type:  none;
+}
+
+legend {
+	display: none;
+}
+
+.ft{
+	font-size: 10px;
+	color: gray;
+}
