@@ -19,6 +19,10 @@ public class JoinDTO {
 	public JoinDTO(String tid) {
 		this.tid = tid;
 	}
+	
+	public JoinDTO(String tid2, String tpw2, String tname2, String tphone2, String tadd2, String tdate2, String timg2) {
+	}
+	
 	public int getTnum() {
 		return tnum;
 	}

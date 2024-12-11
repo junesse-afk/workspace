@@ -33,19 +33,30 @@ public class controller extends HttpServlet{
 			dis.forward(req, resp);
 		}else if (command.equals("/regist.com")) {
 			String tid = req.getParameter("tid");
+			String tpw = req.getParameter("tpw");
+			String tname = req.getParameter("tname");
+			String tphone = req.getParameter("tphone");
+			String tadd = req.getParameter("tadd");
+			String tdate = req.getParameter("tdate");
+			String timg = req.getParameter("timg");
 			
-			JoinDTO joindto = new JoinDTO(tid, tpw, );
+			
+			JoinDTO joindto = new JoinDTO(tid, tpw, tname, tphone, tadd, tdate, timg);
 			
 			join(joindto);
 		}
 
 	}
 	
+	
 	public void join (JoinDTO joindto) {
-				
-		if (joindto.getTid() == '') {
-			
-		}
+		String tid = null;
+		
+		//아이디
+		if (tid.length() > 4 && tid.length() < 8) {
+			//쿼리가 안불러지는데
+		} 
 	}
+
 	
 }
