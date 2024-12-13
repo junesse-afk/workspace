@@ -44,6 +44,9 @@ public class controller extends HttpServlet{
 			JoinDTO joindto = new JoinDTO(tid, tpw, tname, tphone, tadd, tdate, timg);
 			
 			join(joindto);
+		}else if (command.equals("/show.com")) {
+			RequestDispatcher dis = req.getRequestDispatcher("show/show.jsp");
+			dis.forward(req, resp);
 		}
 
 	}
