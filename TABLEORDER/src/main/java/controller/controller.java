@@ -31,6 +31,11 @@ public class controller extends HttpServlet{
 		}else if (command.equals("/join.com")) {
 			RequestDispatcher dis = req.getRequestDispatcher("member/join.jsp");
 			dis.forward(req, resp);
+	
+		}else if (command.equals("/show.com")) {
+			RequestDispatcher dis = req.getRequestDispatcher("show/show.jsp");
+			dis.forward(req, resp);
+			
 		}else if (command.equals("/regist.com")) {
 			String tid = req.getParameter("tid");
 			String tpw = req.getParameter("tpw");
@@ -44,9 +49,6 @@ public class controller extends HttpServlet{
 			JoinDTO joindto = new JoinDTO(tid, tpw, tname, tphone, tadd, tdate, timg);
 			
 			join(joindto);
-		}else if (command.equals("/show.com")) {
-			RequestDispatcher dis = req.getRequestDispatcher("show/show.jsp");
-			dis.forward(req, resp);
 		}
 
 	}
@@ -58,7 +60,7 @@ public class controller extends HttpServlet{
 		//아이디
 		if (tid.length() > 4 && tid.length() < 8) {
 			//쿼리가 안불러지는데
-		} 
+ } 
 	}
 
 	
