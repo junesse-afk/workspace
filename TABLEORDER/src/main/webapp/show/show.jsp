@@ -10,8 +10,8 @@
 <body>
 	<aside class="show_bg">
 	<ul class="opt">
-		<li><div><button class="opt1">카테고리1</button></div></li>
-		<li><div><button class="opt2">카테고리2</button></div></li>
+		<li><div><button type="submit" class="opt1">카테고리1</button></div></li>
+		<li><div><button type="submit" class="opt2">카테고리2</button></div></li>
 		<li><div><button class="opt3">카테고리3</button></div></li>
 		<li><div><button class="opt4">카테고리4</button></div></li>
 		<li><div><button class="opt5">카테고리5</button></div></li>
